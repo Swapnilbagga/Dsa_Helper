@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,200;0,300;1,100;1,200&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+
+*{
+    
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    
+    background-image: url(images/stars.png);
+    background-size: cover;
+    background-repeat: repeat;
+   
+}
+
+
+.close{
+    
+    color: white;
+     display: inline-block;
+  text-decoration: none;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background-color: #fff;
+  color: #2b1055;
+  font-size: 1.5em;
+  z-index: 9;
+  
+}
+
+body{
+    background: linear-gradient(#2b1055, #7597de);
+    color: white;
+   
+}
+
+
+.level{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+   
+}
+
+.level_h1{
+    font-size: 4rem;
+     font-family: "Play", sans-serif;
+    animation: neon 1s ease infinite;
+    margin-left: 23%;
+}
+
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0 0 10px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 2px #fed128, 2px 2px 2px #806914;
+        color: #f5efcb;
+    }
+    50% {
+        text-shadow: 0 0 2px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 2px #800e0b, 4px 4px 2px #40340a;
+        color: #eda0d3;
+    }
+}
+
+.main{
+    height: 300px;
+    width: 70vw;
+    display: flex;
+    margin-left: 100px;
+    background-color: red;
+    justify-content: center;
+    
+    align-items: center;
+    
+}
+
+.first_level{
+    background-color: black;
+    border-radius: 24px;
+    width: 70vw;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-left: 150px;
+    height: 50px;
+}
+
+
+.learn_tag{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.learn{
+    margin-right: 0px;
+    background-color: royalblue;
+    margin-top: 0px;
+    height: 50px;
+    font-size: 1rem;
+    color: black;
+   
+    border-radius: 20px;
+    width: 80px;
+}
+
+.learn:hover{
+    background-color: deeppink;
+    color: black;
+    border: 2px solid black;
+}
+
+#lang{
+    color: black;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navigation li a{
+    text-decoration: none;
+    padding: 0px 15px;
+    color: white;
+    border-radius: 20px;
+    z-index: 100000;
+}
+
+.navigation li a:hover{
+ background: white;
+    color: #111;
+}
+
+
+#first{
+   /* background-color: blue; */
+    margin-top: 0px;
+    display: flex;
+    overflow: hidden;
+    height: 95vh;
+    
+  
+}
+
+.main_header{
+    
+    top: 0px;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+   
+    
+   
+}
+
+
+
+.header-right{
+    display: flex;
+    
+    
+   /* background-color: red;*/
+   
+    
+}
+
+.content{
+   
+   overflow: hidden;
+    margin-left: 0;
+    font-size: 40px;
+    padding-top: 150px;
+    padding-left: 100px;
+   
+}
+a{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+#image{
+
+   background-image: url('remove.png');
+    
+    width: 40vw;
+    height: 80vh;
+    position:relative;
+    left: 0%;
+  /*  background-color: red; */
+    top: 50px;
+    animation: animate 1000ms linear infinite; /* animate is name we want to give to animation and 1000ms is duration and infinite for keep on animating*/
+        background-size: contain;
+        background-repeat: no-repeat;
+}
+
+@keyframes animate{
+    0%{
+        
+        top:0px;
+    }
+    
+    50%{
+       
+        top:40px;
+    }
+    
+    100%{
+        
+        top: 0px;
+    }
+}
+
+
+
+/* ---------------*/
+
+.drop-main {
+    display: flex;
+    flex-direction: row;
+    font-size: 4rem;
+    margin: 1.5rem;
+    justify-content: center;
+    font-family: "Russo One", sans-serif;
+}
+.d {
+    opacity: 0;
+    margin-top: 180px;
+    animation: drop 1s linear forwards;
+    color: #00ffff;
+}
+.r {
+    opacity: 0;
+     margin-top: 180px;
+    animation: drop 1s linear forwards 0.2s;
+    color: #99ffff;
+}
+.o {
+    opacity: 0;
+     margin-top: 180px;
+    animation: drop 1s linear forwards 0.4s;
+    color: #ccffff;
+}
+.p {
+    opacity: 0;
+     margin-top: 180px;
+    animation: drop 1s linear forwards 0.6s;
+    color: #ffffff;
+}
+.s {
+    opacity: 0;
+     margin-top: 180px;
+    font-weight: 300;
+    animation: drop 0.4s linear forwards 0.8s;
+    color: #de4040;
+}
+@keyframes drop {
+    0% {
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    65% {
+        transform: translateY(-17px);
+        opacity: 1;
+    }
+    75% {
+        transform: translateY(-22px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+        
+    }
+}
+
+
+/* ---------------------------------------------*/
+
+
+.close{
+    display: inline;
+    
+    border-radius: 20px;
+   margin-left: 55%;
+    color: black;
+    animation: animate2 1000ms 1;
+    font-size: 20px;
+}
+
+.dont,.more{
+      margin-left: 45%;
+    font-size: 2rem;
+    animation: animate2 1000ms 1;
+    
+}
+.close:hover{
+    background-color: blanchedalmond;
+    color: black;
+    border: 4px solid black;
+
+}
+
+@keyframes animate2{
+    0%{
+        margin-left: 0;
+        opacity: 0;
+    }
+    
+    
+    25%{
+      margin-left: 19%;
+        opacity: 0.5;  
+    }
+    50%{
+        margin-left: 38%;
+        opacity: 0.5;
+    }
+    
+    
+    
+    100%{
+        margin-left: 55%;
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes animate3{
+    0%{
+        margin-left: 0;
+        opacity: 0;
+    }
+    
+    
+    25%{
+      margin-left: 15%;
+        opacity: 0.5;  
+    }
+    50%{
+        margin-left: 30%;
+        opacity: 0.5;
+    }
+    
+    
+    
+    100%{
+        margin-left: 45%;
+        opacity: 1;
+    }
+}
+
+
+
+@media screen and (max-width:1000px){
+   .drop-main {
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    
+        
+       width: auto;
+       
+    justify-content: center;
+    font-family: "Russo One", sans-serif;
+}
+    
+   
+    
+    #first{
+       
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+    }
+    
+    #image{
+        background-image: url(remove.png);
+        width: auto;
+        display: flex;
+        justify-content: center;
+        margin-left: 150px;
+    }
+    
+    .drop-main {
+    display: flex;
+    flex-direction: row;
+    font-size: 4rem;
+    margin: 1.5rem;
+    justify-content: center;
+    font-family: "Russo One", sans-serif;
+}
+.d {
+    opacity: 0;
+    margin-top: 150px;
+    animation: drop 1s linear forwards;
+    color: #00ffff;
+}
+.r {
+    opacity: 0;
+     margin-top: 150px;
+    animation: drop 1s linear forwards 0.2s;
+    color: #99ffff;
+}
+.o {
+    opacity: 0;
+     margin-top: 150px;
+    animation: drop 1s linear forwards 0.4s;
+    color: #ccffff;
+}
+.p {
+    opacity: 0;
+     margin-top: 150px;
+    animation: drop 1s linear forwards 0.6s;
+    color: #ffffff;
+}
+.s {
+    opacity: 0;
+     margin-top: 150px;
+    font-weight: 300;
+    animation: drop 0.4s linear forwards 0.8s;
+    color: #de4040;
+}
+    
+    
+    
+    @keyframes drop {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    65% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+    75% {
+        transform: translateY(-22px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+        
+    }
+}
+
+    
+    
+    
+    .close{
+   display: none;
+}
+
+  
+ .h1_iphone{
+      display: inline;
+    
+    border-radius: 20px;
+   margin-left:45%;
+    color: black;
+    animation: animate3 1000ms 1;
+    font-size: 20px;
+}
+
+    
+    #image{
+        display: inline-block;
+    }
+    
+}
+
+
+.h1_iphone{
+    display: none;
+}
+
+/*--------------------------- */
+
+
+@media screen and (max-width:700px){
+    .h1_iphone{
+        visibility: inherit;
+        display: flex;
+        justify-content: center;
+        color: white;
+         
+    font-family: 'Poppins',sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        margin-top: 100px;
+    }
+    
+  
+}
+
+
+#cpp{
+   
+    margin-top: 200px;
+   
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+}
+
+
+
+#topic_list{
+    background-color: blue;
+    
+    width: 100%;
+    height: 400px;
+}
+
+
+.learn_tag{
+    font-size: 20px;
+}
+
+.row{
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.col-sm{
+    display: flex; 
+    flex-direction: column;
+    margin: 20px;
+   margin-left: 50px;
+   
+    position: relative;
+    width: 200px;
+    background-color: skyblue;
+    border-radius: 10%; 
+    align-content: center;
+    justify-content: center;
+}
+
+.col-sm:hover{
+    background-color:blanchedalmond;
+    transform: scale(1.2) ;
+     transition: transform .5s ease;
+    color:blue;
+   
+    /*animation: 30s ease 0s normal none infinite running zoomin; */
+}
+
+.topic_name{
+    
+    font-weight: 200;
+    color: black;
+    text-align: center;
+    font-weight: 300;
+    
+}
+
+.total_question{
+    text-align: center;
+    color: white;
+    width: 100%;
+    background-color: black;
+}
+
+
+.topic_list{
+    text-align: center;
+    color: black;
+
+   background-color: bisque;
+   
+    letter-spacing: 2px;
+    word-spacing: 5px;
+   font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+}
+
+/* ABOUT PAGE */
+.centered-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  font-size: 24px;
+}
+
+.social-links a {
+  color: #000;
+  margin: 0 10px;
+}
+
+.social-links a:hover {
+  color: #333;
+}
+
+/* Include Font Awesome CSS or use your own Font Awesome kit */
+
+
+
+.typing-text {
+  overflow: hidden; /* Ensure text overflow is hidden */
+  border-right: 0.15em solid #333; /* Vertical blinking cursor effect */
+  white-space: nowrap; /* Prevent line breaks */
+  margin: 0; /* Remove default margin */
+  letter-spacing: 0.15em; /* Adjust letter spacing for typing effect */
+  animation: typing 2s steps(40, end), blinking-cursor 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0; /* Start with no width (invisible) */
+  }
+  to {
+    width: 100%; /* End with full width (visible) */
+  }
+}
+
+@keyframes blinking-cursor {
+  from, to {
+    border-color: transparent; /* Start and end with transparent color */
+  }
+  50% {
+    border-color: #333; /* Halfway through the animation, show the border color */
+  }
+}
